@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Upstream Vital, local presets, and renders stay off this repository.
+vendor/
+data/
+*.vital
+*.wav
+*.sqlite3

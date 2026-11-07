@@ -1,0 +1,18 @@
+[project]
+name = "flexmem"
+version = "0.1.0"
+description = "Local MCP sound-design memory and Vital renderer bridge"
+requires-python = ">=3.11"
+
+[project.scripts]
+flexmem-mcp = "flexmem_mcp.server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
