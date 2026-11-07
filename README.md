@@ -1,9 +1,9 @@
-# FlexMem
+# Vital synth harness
 
-FlexMem is a local, stdio MCP server for iterative synth sound design.  This
-first implementation controls Vital-compatible `.vital` preset files, renders
-them with Vital's official headless renderer, analyses the resulting WAV, and
-stores accepted sounds in a searchable local SQLite library.
+A local, stdio MCP server for iterative sound design in Vital. It controls
+Vital-compatible `.vital` preset files, renders them with Vital's official
+headless renderer, analyses the resulting WAV, and stores accepted sounds in
+a searchable local library. FlexMem is that memory mechanism.
 
 It deliberately has no cloud API, audio upload, or automatic acceptance step.
 An agent proposes and renders; the human decides what is worth remembering.
@@ -63,6 +63,6 @@ The server uses only the Python standard library. Its data remains under
 
 `vendor/vital` is the upstream Vital source and is GPL-3.0 licensed. The
 repository's restrictions also prohibit redistributing bundled factory presets
-and using Vital branding for derivative binary distributions. FlexMem does not
-ship any presets. Review the upstream license before distribution.
+and using Vital branding for derivative binary distributions. This repository
+does not ship any presets. Review the upstream license before distribution.
 
